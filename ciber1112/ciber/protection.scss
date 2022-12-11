@@ -1,0 +1,122 @@
+:root{
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background: url("img/bg-without-blurs.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+img{
+    user-select: none;
+}
+img, span, a, video, input, label, button, textarea{
+    display: block;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+.container{
+    padding: 0 60px;
+}
+.header{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        a{
+            margin-right: 25px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #2964E3;
+            text-align: center;
+            background: #FFFFFF;
+            border-radius: 150px;
+            padding: 0 30px;
+            max-width: 200px;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                transition: all 0.3s;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                box-shadow: 0 0 13px 2px #1987C9;
+            }
+        }
+    }
+    &__switch{
+        display: flex;
+        align-items: center;
+        a{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #2964E3;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        a.switch-active{
+            padding-top: 2px;
+            border-bottom: 2px solid  #2964E3;
+        }
+    }
+}
+.footer{
+    background: url("img/main/footer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 75px 0;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: minmax(100px, 300px) minmax(100px, 500px);
+        align-items: center;
+        column-gap: 12rem;
+    }
+    &-logo{
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 84.1%;
+        letter-spacing: -0.07em;
+        color: #404040;
+    }
+    &__links{
+        display: flex;
+        align-items: center;
+        a{
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFFFFF;
+            border-radius: 150px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #2964E3;
+            width: 200px;
+            padding: 15px 30px;
+            text-align: center;
+            &:last-child{
+                margin-left: 20px;
+            }
+        }
+    }
+}
